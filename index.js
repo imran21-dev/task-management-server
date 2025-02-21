@@ -10,7 +10,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "http://localhost:5173" },
+  cors: { origin: ["https://orbitask-89368.web.app", "https://orbitask-89368.firebaseapp.com"] },
 });
 
 const port = process.env.PORT || 5000;
@@ -57,7 +57,9 @@ async function run() {
     });
 
     app.get("/tasks", async (req, res) => {
-      const result = await taskCollection.find().toArray();
+      const email = req.query.email
+      const query = {email: email}
+      const result = await taskCollection.find(query).toArray();
       res.send(result);
     });
 
