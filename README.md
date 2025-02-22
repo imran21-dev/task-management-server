@@ -4,9 +4,9 @@
 Orbitask is a task management application that provides a robust backend API for managing tasks, users, and real-time updates. Built with Node.js and Express, it utilizes MongoDB for data storage and Socket.io for real-time task updates.
 
 ## Live Links
-- **API Base URL:** [https://task-management-server-7lv2.onrender.com/](#)
-- **Frontend Repository:** [https://github.com/imran21-dev/Orbitask](#) 
-- **Live Demo:** [https://orbitask-89368.web.app/](#)
+- **API Base URL:** [https://task-management-server-7lv2.onrender.com/]
+- **Frontend Repository:** [https://github.com/imran21-dev/Orbitask]
+- **Live Demo:** [https://orbitask-89368.web.app/]
 
 ## Dependencies
 Orbitask backend relies on the following dependencies:
