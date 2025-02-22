@@ -10,7 +10,10 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: ["https://orbitask-89368.web.app", "https://orbitask-89368.firebaseapp.com"] },
+  cors: { origin: "https://orbitask-89368.web.app",
+     methods: ["GET", "POST"],
+     credentials: true
+   },
 });
 
 const port = process.env.PORT || 5000;
